@@ -95,7 +95,7 @@ const Index = () => {
                   <Icon name="Calculator" size={20} className="mr-2" />
                   Рассчитать стоимость авто
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 border-gray-300 text-white hover:bg-white hover:text-gray-900 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                <Button size="lg" variant="outline" className="border-2 border-gray-300 text-white hover:bg-white hover:text-gray-900 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300" onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}>
                   <Icon name="MessageCircle" size={20} className="mr-2" />
                   Получить консультацию
                 </Button>
@@ -117,7 +117,7 @@ const Index = () => {
             </div>
             <div className="relative animate-slide-in">
               <img 
-                src="/img/a284cfa8-31b5-4f0e-beda-9fced498fade.jpg" 
+                src="/img/6583de9a-46cd-45c3-960a-0aeffd56bb77.jpg" 
                 alt="Korean luxury cars showroom" 
                 className="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
               />
@@ -285,6 +285,14 @@ const Index = () => {
                           <SelectItem value="kia">Kia</SelectItem>
                           <SelectItem value="genesis">Genesis</SelectItem>
                           <SelectItem value="ssangyong">SsangYong</SelectItem>
+                          <SelectItem value="samsung">Samsung (Renault)</SelectItem>
+                          <SelectItem value="daewoo">Daewoo</SelectItem>
+                          <SelectItem value="chevrolet">Chevrolet Korea</SelectItem>
+                          <SelectItem value="bmw">BMW Korea</SelectItem>
+                          <SelectItem value="mercedes">Mercedes Korea</SelectItem>
+                          <SelectItem value="audi">Audi Korea</SelectItem>
+                          <SelectItem value="lexus">Lexus Korea</SelectItem>
+                          <SelectItem value="infiniti">Infiniti Korea</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -437,34 +445,66 @@ const Index = () => {
                 { 
                   step: "01", 
                   title: "Заявка и консультация", 
-                  description: "Оставляете заявку с требованиями к автомобилю. Наш менеджер связывается с вами для уточнения деталей и расчета стоимости.",
+                  description: "Вы оставляете заявку на сайте или пишете в мессенджер. Подбираем 3–5 подходящих вариантов с учётом пожеланий и стоимости.",
                   icon: "MessageCircle",
                   image: "/img/2ea165f6-f950-424b-9e24-29f87790f76b.jpg",
                   delay: "0s"
                 },
                 { 
                   step: "02", 
-                  title: "Поиск и подбор автомобиля", 
-                  description: "Ищем подходящий автомобиль на аукционах и у дилеров Кореи. Проверяем техническое состояние и юридическую чистоту.",
-                  icon: "Search",
+                  title: "Договор и старт работы", 
+                  description: "Заключаем договор в нашем офисе в Екатеринбурге или дистанционно. Создаём общий чат в Telegram с командой. Всё общение и этапы сделки фиксируются там.",
+                  icon: "FileText",
                   image: "/img/59a86106-6de2-4e84-b9f7-4af18c626784.jpg",
-                  delay: "0.2s"
+                  delay: "0.1s"
                 },
                 { 
                   step: "03", 
-                  title: "Выкуп и оформление", 
-                  description: "После вашего одобрения выкупаем автомобиль, оформляем все необходимые документы для экспорта.",
+                  title: "Предоплата", 
+                  description: "Вы оплачиваете 150 000 ₽ за услугу. И мы выезжаем на осмотр подобранных вариантов.",
                   icon: "CreditCard",
+                  image: "/img/7a742843-b211-4f10-8c4f-bec779fbb031.jpg",
+                  delay: "0.2s"
+                },
+                { 
+                  step: "04", 
+                  title: "Первичный осмотр", 
+                  description: "Проводим детальный осмотр. Высылаем отчёт более 100 подробных фото, 10 видео и диагностический отчёт. После утверждения понравившегося варианта - вносите залог за авто (сумма входит в конечную стоимость).",
+                  icon: "Eye",
+                  image: "/img/e3f34ee8-f537-4db7-a15e-eceb169db693.jpg",
+                  delay: "0.3s"
+                },
+                { 
+                  step: "05", 
+                  title: "Выкуп и вторичный осмотр", 
+                  description: "В течение 7 дней после внесения залога - вы оплачиваете авто и все расходы по Корее через наши обменники по всей стране или инвойсом через банк (для несанкционных авто). Мы выкупаем машину и проводим вторичный осмотр на подъемнике с фото и видео отчётом.",
+                  icon: "ShoppingCart",
                   image: "/img/7a742843-b211-4f10-8c4f-bec779fbb031.jpg",
                   delay: "0.4s"
                 },
                 { 
-                  step: "04", 
-                  title: "Доставка и таможня", 
-                  description: "Отправляем автомобиль морем в Россию, оформляем таможенные документы и доставляем в ваш город.",
-                  icon: "Truck",
-                  image: "/img/e3f34ee8-f537-4db7-a15e-eceb169db693.jpg",
+                  step: "06", 
+                  title: "Отправка и доставка", 
+                  description: "Снимаем авто с учёта, оформляем документы, отправляем в порт Пусана, а затем паромом во Владивосток.",
+                  icon: "Ship",
+                  image: "/img/6a17d362-8a67-4684-8269-57b54c7f2b84.jpg",
+                  delay: "0.5s"
+                },
+                { 
+                  step: "07", 
+                  title: "Растаможка авто", 
+                  description: "Авто растамаживается в городе Владивосток нашими брокерами. Вы оплачиваете растаможку, брокера и логистику по России на данном этапе.",
+                  icon: "ClipboardCheck",
+                  image: "/img/59a86106-6de2-4e84-b9f7-4af18c626784.jpg",
                   delay: "0.6s"
+                },
+                { 
+                  step: "08", 
+                  title: "Получение автомобиля", 
+                  description: "Вы получаете авто с полным пакетом документов. Машина готова к постановке на учет.",
+                  icon: "CheckCircle",
+                  image: "/img/e3f34ee8-f537-4db7-a15e-eceb169db693.jpg",
+                  delay: "0.7s"
                 }
               ].map((step, index) => (
                 <div 
