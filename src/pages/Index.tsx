@@ -88,12 +88,12 @@ const Index = () => {
                 <span className="bg-gradient-to-r from-green-400 to-red-400 bg-clip-text text-transparent"> с доставкой в РФ под ключ!</span>
               </h2>
               <p className="text-xl text-gray-300 mb-10 animate-fade-in">
-                Премиум подбор и экспорт авто из Южной Кореи в Россию. Привезем в топовой комплектации с низким пробегом. Доставим за 27 дней. Цены ниже на 30% чем в РФ
+                Премиум подбор и экспорт авто из Южной Кореи в Россию. Привезем в топовой комплектации с низким пробегом. Доставим за 35 дней. Цены ниже на 30% чем в РФ
               </p>
               <div className="flex flex-col sm:flex-row gap-6 mb-12 animate-slide-up">
                 <Button size="lg" className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                   <Icon name="Calculator" size={20} className="mr-2" />
-                  Рассчитать стоимость авто
+                  Примерный расчет стоимости
                 </Button>
                 <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300" onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}>
                   <Icon name="MessageCircle" size={20} className="mr-2" />
@@ -106,7 +106,7 @@ const Index = () => {
                   <div className="text-sm text-gray-300">Автомобилей привезено</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-red-400 mb-2">27</div>
+                  <div className="text-4xl font-bold text-red-400 mb-2">35</div>
                   <div className="text-sm text-gray-300">Дней доставка</div>
                 </div>
                 <div className="text-center">
@@ -457,7 +457,7 @@ const Index = () => {
                   title: "Договор и старт работы", 
                   description: "Заключаем договор в нашем офисе в Екатеринбурге или дистанционно. Создаём общий чат в Telegram с командой. Всё общение и этапы сделки фиксируются там.",
                   icon: "FileText",
-                  image: "/img/fe7d56a2-ec82-486f-b171-1e285fa95b6d.jpg",
+                  image: "/img/bd0e6c0e-14fa-4e53-a08c-65a4689b7492.jpg",
                   delay: "0.1s"
                 },
                 { 
@@ -465,7 +465,7 @@ const Index = () => {
                   title: "Предоплата", 
                   description: "Вы оплачиваете 150 000 ₽ за услугу. И мы выезжаем на осмотр подобранных вариантов.",
                   icon: "CreditCard",
-                  image: "/img/4956c838-faa4-4ae4-b4f0-51bc57e25b62.jpg",
+                  image: "/img/912c939e-7ec5-4b2c-a502-9366681019ab.jpg",
                   delay: "0.2s"
                 },
                 { 
@@ -473,7 +473,7 @@ const Index = () => {
                   title: "Первичный осмотр", 
                   description: "Проводим детальный осмотр. Высылаем отчёт более 100 подробных фото, 10 видео и диагностический отчёт. После утверждения понравившегося варианта - вносите залог за авто (сумма входит в конечную стоимость).",
                   icon: "Eye",
-                  image: "/img/edf0c7e7-8c19-4dfb-a047-e6dd114cf2c4.jpg",
+                  image: "/img/01ae7b5e-84ce-4266-9f55-4d03a8999eea.jpg",
                   delay: "0.3s"
                 },
                 { 
@@ -481,7 +481,7 @@ const Index = () => {
                   title: "Выкуп и вторичный осмотр", 
                   description: "В течение 7 дней после внесения залога - вы оплачиваете авто и все расходы по Корее через наши обменники по всей стране или инвойсом через банк (для несанкционных авто). Мы выкупаем машину и проводим вторичный осмотр на подъемнике с фото и видео отчётом.",
                   icon: "ShoppingCart",
-                  image: "/img/b97c0c20-0c9e-4c13-8cda-d7906c0791d3.jpg",
+                  image: "/img/1e759362-ea7c-4a07-9272-d4d2328c2517.jpg",
                   delay: "0.4s"
                 },
                 { 
@@ -569,7 +569,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up">
               <Button size="lg" className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                 <Icon name="Calculator" size={20} className="mr-2" />
-                Рассчитать стоимость
+                Примерный расчет стоимости
               </Button>
               <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300" onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}>
                 <Icon name="Phone" size={20} className="mr-2" />
@@ -604,39 +604,64 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Частые вопросы</h2>
-            <p className="text-xl text-gray-600">Ответы на самые популярные вопросы о покупке авто из Кореи</p>
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6 animate-fade-in">Частые вопросы</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in">Ответы на самые актуальные вопросы о покупке авто из Кореи</p>
           </div>
-          <div className="max-w-4xl mx-auto space-y-4">
+          <div className="max-w-4xl mx-auto space-y-6">
             {[
               {
                 question: "Сколько времени занимает доставка автомобиля?",
-                answer: "Доставка автомобиля из Кореи в Россию занимает 27 дней с момента выкупа. Это включает подготовку документов, морскую перевозку и таможенное оформление."
+                answer: "Доставка автомобиля из Кореи в Россию занимает 35 дней с момента выкупа. Это включает подготовку документов, морскую перевозку и таможенное оформление.",
+                delay: "0s"
               },
               {
                 question: "Какие гарантии вы предоставляете?",
-                answer: "Мы предоставляем полную юридическую гарантию чистоты автомобиля, гарантию технического состояния, страхование на время доставки и гарантию возврата средств при отказе от сделки."
+                answer: "Мы предоставляем полную юридическую гарантию чистоты автомобиля, страхование на время доставки и возможность возврата средств при отказе от сделки до выкупа.",
+                delay: "0.1s"
               },
               {
-                question: "Можно ли посмотреть автомобиль перед покупкой?",
-                answer: "Да, мы предоставляем детальные фото и видео автомобиля, а также можем организовать онлайн-просмотр через видеосвязь с нашим представителем в Корее."
+                question: "Сколько стоит ваша услуга?",
+                answer: "Наша услуга стоит 150 000 рублей за полный цикл подбора, осмотра, выкупа и доставки автомобиля во Владивосток. Растаможка и доставка по России оплачивается отдельно.",
+                delay: "0.2s"
               },
               {
                 question: "Какие документы нужны для покупки?",
-                answer: "Для покупки автомобиля потребуется паспорт РФ, справка о доходах для таможни и договор с нашей компанией. Все остальные документы мы оформляем самостоятельно."
+                answer: "Для покупки автомобиля потребуется паспорт РФ, справка о доходах для таможни. Все остальные документы мы оформляем самостоятельно, включая таможенные декларации и свидетельства.",
+                delay: "0.3s"
               },
               {
-                question: "Действительно ли цены ниже на 30%?",
-                answer: "Да, благодаря прямым поставкам от производителей и дилеров, отсутствию посредников и курсу валют, цены на корейские автомобили действительно ниже российских на 25-35%."
+                question: "Можно ли посмотреть авто перед покупкой?",
+                answer: "Обязательно! Мы предоставляем более 100 детальных фото, 10 видео и полный диагностический отчёт. Также можем организовать онлайн-просмотр через видеосвязь с нашим представителем в Корее.",
+                delay: "0.4s"
+              },
+              {
+                question: "Какие бренды вы поставляете?",
+                answer: "Мы специализируемся на популярных корейских брендах: Hyundai, Genesis, Kia, SsangYong. Работаем только с официальными дилерами и авкционами в Корее.",
+                delay: "0.5s"
               }
             ].map((faq, index) => (
-              <Card key={index} className="p-6">
-                <h3 className="text-lg font-semibold text-[#2C3E50] mb-3">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
-              </Card>
+              <div 
+                key={index} 
+                className="group animate-slide-up opacity-0 transform translate-y-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 p-6 border-l-4 border-transparent hover:border-green-500"
+                style={{ animationDelay: faq.delay, animationFillMode: 'forwards' }}
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">
+                      {faq.question}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
+                      {faq.answer}
+                    </p>
+                  </div>
+                  <div className="ml-4 w-8 h-8 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Icon name="ChevronRight" className="text-white" size={16} />
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
