@@ -140,69 +140,83 @@ const Index = () => {
       </section>
 
       {/* Advantages Section */}
-      <section id="advantages" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Почему выбирают нас</h2>
-            <p className="text-xl text-gray-600">Наши преимущества в работе с корейскими автомобилями</p>
+      <section id="advantages" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-green-50/30 to-gray-50/30"></div>
+        <div className="container mx-auto px-4 relative">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6 animate-fade-in">Почему выбирают нас</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in">Наши преимущества в работе с корейскими автомобилями</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { 
                 title: "Цены ниже на 30%", 
                 description: "Прямые поставки от производителей и дилеров", 
                 icon: "DollarSign",
-                color: "bg-green-500"
+                color: "bg-gradient-to-br from-green-500 to-green-600",
+                delay: "0s"
               },
               { 
                 title: "Доставка 27 дней", 
                 description: "Быстрая морская доставка контейнерами", 
                 icon: "Clock",
-                color: "bg-blue-500"
+                color: "bg-gradient-to-br from-gray-700 to-gray-900",
+                delay: "0.2s"
               },
               { 
                 title: "Топовая комплектация", 
                 description: "Автомобили в максимальной комплектации", 
                 icon: "Star",
-                color: "bg-yellow-500"
+                color: "bg-gradient-to-br from-red-500 to-red-600",
+                delay: "0.4s"
               },
               { 
                 title: "Низкий пробег", 
                 description: "Только автомобили с минимальным пробегом", 
                 icon: "Gauge",
-                color: "bg-purple-500"
+                color: "bg-gradient-to-br from-gray-600 to-gray-700",
+                delay: "0.6s"
               },
               { 
                 title: "Юридическая чистота", 
                 description: "Все документы и сертификаты в порядке", 
                 icon: "Shield",
-                color: "bg-red-500"
+                color: "bg-gradient-to-br from-red-600 to-red-700",
+                delay: "0.8s"
               },
               { 
                 title: "Гарантия качества", 
                 description: "Техническая проверка перед отправкой", 
                 icon: "CheckCircle",
-                color: "bg-green-600"
+                color: "bg-gradient-to-br from-green-600 to-green-700",
+                delay: "1s"
               },
               { 
                 title: "Страхование", 
                 description: "Полная страховка на время доставки", 
                 icon: "Umbrella",
-                color: "bg-blue-600"
+                color: "bg-gradient-to-br from-gray-800 to-gray-900",
+                delay: "1.2s"
               },
               { 
                 title: "Поддержка 24/7", 
                 description: "Консультации на всех этапах покупки", 
                 icon: "Headphones",
-                color: "bg-orange-500"
+                color: "bg-gradient-to-br from-red-500 to-red-600",
+                delay: "1.4s"
               }
             ].map((advantage, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <div className={`w-12 h-12 ${advantage.color} rounded-lg flex items-center justify-center mb-4`}>
-                  <Icon name={advantage.icon as any} className="text-white" size={20} />
+              <Card 
+                key={index} 
+                className="group text-center p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm border-0 shadow-lg animate-slide-up hover:bg-white"
+                style={{ animationDelay: advantage.delay }}
+              >
+                <div className={`w-20 h-20 ${advantage.color} rounded-full flex items-center justify-center mx-auto mb-6 group-hover:animate-float shadow-lg`}>
+                  <Icon name={advantage.icon as any} className="text-white" size={28} />
                 </div>
-                <h3 className="text-lg font-semibold text-[#2C3E50] mb-2">{advantage.title}</h3>
-                <p className="text-gray-600 text-sm">{advantage.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">{advantage.title}</h3>
+                <p className="text-gray-600 group-hover:text-gray-700 transition-colors">{advantage.description}</p>
+                <div className="mt-4 w-12 h-1 bg-gradient-to-r from-green-500 to-red-500 mx-auto rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Card>
             ))}
           </div>
@@ -517,56 +531,56 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#2C3E50] text-white py-12">
+      <footer className="bg-gradient-to-br from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Car" className="text-[#FF6B35]" size={28} />
-                <span className="text-xl font-bold">K-AUTO 96</span>
+              <div className="flex items-center space-x-2 mb-6">
+                <Icon name="Car" className="text-green-400" size={32} />
+                <span className="text-2xl font-bold bg-gradient-to-r from-green-400 to-red-400 bg-clip-text text-transparent">K-AUTO 96</span>
               </div>
-              <p className="text-gray-400 text-sm">
-                Профессиональный подбор и доставка автомобилей из Южной Кореи с полным сопровождением сделки
+              <p className="text-gray-400 text-base leading-relaxed">
+                Премиум подбор и доставка автомобилей из Южной Кореи с полным сопровождением элитного сервиса
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Услуги</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li>Подбор автомобилей в Корее</li>
-                <li>Выкуп и техническая проверка</li>
-                <li>Доставка морем</li>
-                <li>Таможенное оформление</li>
-                <li>Страхование груза</li>
+              <h4 className="text-xl font-bold mb-6 text-green-400">Услуги</h4>
+              <ul className="space-y-3 text-gray-400">
+                <li className="hover:text-white transition-colors cursor-pointer">Подбор автомобилей в Корее</li>
+                <li className="hover:text-white transition-colors cursor-pointer">Выкуп и техническая проверка</li>
+                <li className="hover:text-white transition-colors cursor-pointer">Доставка морем</li>
+                <li className="hover:text-white transition-colors cursor-pointer">Таможенное оформление</li>
+                <li className="hover:text-white transition-colors cursor-pointer">Страхование груза</li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Популярные марки</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li>Hyundai</li>
-                <li>Kia</li>
-                <li>Genesis</li>
-                <li>SsangYong</li>
-                <li>Chevrolet Korea</li>
+              <h4 className="text-xl font-bold mb-6 text-red-400">Популярные марки</h4>
+              <ul className="space-y-3 text-gray-400">
+                <li className="hover:text-white transition-colors cursor-pointer">Hyundai</li>
+                <li className="hover:text-white transition-colors cursor-pointer">Kia</li>
+                <li className="hover:text-white transition-colors cursor-pointer">Genesis</li>
+                <li className="hover:text-white transition-colors cursor-pointer">SsangYong</li>
+                <li className="hover:text-white transition-colors cursor-pointer">Chevrolet Korea</li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Контакты</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li>+7 (999) 123-45-67</li>
-                <li>info@k-auto96.ru</li>
-                <li>г. Екатеринбург</li>
-                <li>Пн-Пт: 9:00-18:00</li>
+              <h4 className="text-xl font-bold mb-6 text-green-400">Контакты</h4>
+              <ul className="space-y-3 text-gray-400">
+                <li className="hover:text-white transition-colors cursor-pointer">+7 (999) 123-45-67</li>
+                <li className="hover:text-white transition-colors cursor-pointer">info@k-auto96.ru</li>
+                <li className="hover:text-white transition-colors cursor-pointer">г. Екатеринбург</li>
+                <li className="hover:text-white transition-colors cursor-pointer">Пн-Пт: 9:00-18:00</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-700 pt-8">
+          <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="text-gray-400 text-sm">
+              <div className="text-gray-400 text-base">
                 © 2024 K-AUTO 96. Все права защищены.
               </div>
-              <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-gray-400 hover:text-white text-sm">Политика конфиденциальности</a>
-                <a href="#" className="text-gray-400 hover:text-white text-sm">Условия использования</a>
+              <div className="flex space-x-8 mt-4 md:mt-0">
+                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Политика конфиденциальности</a>
+                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">Условия использования</a>
               </div>
             </div>
           </div>
