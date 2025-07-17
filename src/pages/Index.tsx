@@ -507,21 +507,7 @@ const Index = () => {
                   icon: "CheckCircle",
                   image: "/img/ff7f18ad-a70f-4b46-9280-ac385a367b5b.jpg",
                   delay: "0.7s"
-                } 
-                  step: "08", 
-                  title: "Получение автомобиля", 
-                  description: "Вы получаете авто с полным пакетом документов. Машина готова к постановке на учет.",
-                  icon: "CheckCircle",
-                  image: "/img/ff7f18ad-a70f-4b46-9280-ac385a367b5b.jpg",
-                  delay: "0.7s"
                 }
-                  image: "/img/59a86106-6de2-4e84-b9f7-4af18c626784.jpg",
-                  delay: "0.6s"
-                },
-                { 
-                  step: "08", 
-                  title: "Получение автомобиля", 
-                  description: "Вы получаете авто с полным пакетом документов. Машина готова к постановке на учет.",
                   icon: "CheckCircle",
                   image: "/img/e3f34ee8-f537-4db7-a15e-eceb169db693.jpg",
                   delay: "0.7s"
