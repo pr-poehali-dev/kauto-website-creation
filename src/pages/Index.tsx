@@ -449,7 +449,7 @@ const Index = () => {
                   title: "Заявка и консультация", 
                   description: "Вы оставляете заявку на сайте или пишете в мессенджер. Подбираем 3–5 подходящих вариантов с учётом пожеланий и стоимости.",
                   icon: "MessageCircle",
-                  image: "/img/2ea165f6-f950-424b-9e24-29f87790f76b.jpg",
+                  image: "/img/5a30b43e-3fd8-4700-8b6d-b99ceb0f2baf.jpg",
                   delay: "0s"
                 },
                 { 
@@ -457,7 +457,7 @@ const Index = () => {
                   title: "Договор и старт работы", 
                   description: "Заключаем договор в нашем офисе в Екатеринбурге или дистанционно. Создаём общий чат в Telegram с командой. Всё общение и этапы сделки фиксируются там.",
                   icon: "FileText",
-                  image: "/img/59a86106-6de2-4e84-b9f7-4af18c626784.jpg",
+                  image: "/img/fe7d56a2-ec82-486f-b171-1e285fa95b6d.jpg",
                   delay: "0.1s"
                 },
                 { 
@@ -465,7 +465,7 @@ const Index = () => {
                   title: "Предоплата", 
                   description: "Вы оплачиваете 150 000 ₽ за услугу. И мы выезжаем на осмотр подобранных вариантов.",
                   icon: "CreditCard",
-                  image: "/img/7a742843-b211-4f10-8c4f-bec779fbb031.jpg",
+                  image: "/img/4956c838-faa4-4ae4-b4f0-51bc57e25b62.jpg",
                   delay: "0.2s"
                 },
                 { 
@@ -473,7 +473,7 @@ const Index = () => {
                   title: "Первичный осмотр", 
                   description: "Проводим детальный осмотр. Высылаем отчёт более 100 подробных фото, 10 видео и диагностический отчёт. После утверждения понравившегося варианта - вносите залог за авто (сумма входит в конечную стоимость).",
                   icon: "Eye",
-                  image: "/img/e3f34ee8-f537-4db7-a15e-eceb169db693.jpg",
+                  image: "/img/edf0c7e7-8c19-4dfb-a047-e6dd114cf2c4.jpg",
                   delay: "0.3s"
                 },
                 { 
@@ -481,7 +481,7 @@ const Index = () => {
                   title: "Выкуп и вторичный осмотр", 
                   description: "В течение 7 дней после внесения залога - вы оплачиваете авто и все расходы по Корее через наши обменники по всей стране или инвойсом через банк (для несанкционных авто). Мы выкупаем машину и проводим вторичный осмотр на подъемнике с фото и видео отчётом.",
                   icon: "ShoppingCart",
-                  image: "/img/7a742843-b211-4f10-8c4f-bec779fbb031.jpg",
+                  image: "/img/b97c0c20-0c9e-4c13-8cda-d7906c0791d3.jpg",
                   delay: "0.4s"
                 },
                 { 
@@ -489,7 +489,7 @@ const Index = () => {
                   title: "Отправка и доставка", 
                   description: "Снимаем авто с учёта, оформляем документы, отправляем в порт Пусана, а затем паромом во Владивосток.",
                   icon: "Ship",
-                  image: "/img/6a17d362-8a67-4684-8269-57b54c7f2b84.jpg",
+                  image: "/img/7ca71603-e50d-48d0-9e32-99556c766ee3.jpg",
                   delay: "0.5s"
                 },
                 { 
@@ -497,6 +497,24 @@ const Index = () => {
                   title: "Растаможка авто", 
                   description: "Авто растамаживается в городе Владивосток нашими брокерами. Вы оплачиваете растаможку, брокера и логистику по России на данном этапе.",
                   icon: "ClipboardCheck",
+                  image: "/img/6048745f-c979-44a9-9b6e-48d03dad46f9.jpg",
+                  delay: "0.6s"
+                },
+                { 
+                  step: "08", 
+                  title: "Получение автомобиля", 
+                  description: "Вы получаете авто с полным пакетом документов. Машина готова к постановке на учет.",
+                  icon: "CheckCircle",
+                  image: "/img/ff7f18ad-a70f-4b46-9280-ac385a367b5b.jpg",
+                  delay: "0.7s"
+                } 
+                  step: "08", 
+                  title: "Получение автомобиля", 
+                  description: "Вы получаете авто с полным пакетом документов. Машина готова к постановке на учет.",
+                  icon: "CheckCircle",
+                  image: "/img/ff7f18ad-a70f-4b46-9280-ac385a367b5b.jpg",
+                  delay: "0.7s"
+                }
                   image: "/img/59a86106-6de2-4e84-b9f7-4af18c626784.jpg",
                   delay: "0.6s"
                 },
@@ -549,21 +567,56 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#FF6B35] to-[#e55a2b] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">Готовы купить автомобиль из Кореи?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Оставьте заявку прямо сейчас и получите персональный расчет стоимости автомобиля с доставкой
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-[#FF6B35] hover:bg-gray-100 px-8">
-              <Icon name="Calculator" size={20} className="mr-2" />
-              Рассчитать стоимость
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#FF6B35] px-8">
-              <Icon name="Phone" size={20} className="mr-2" />
-              Позвонить сейчас
-            </Button>
+      <section className="relative py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-green-900/30 to-red-900/30"></div>
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-green-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-6xl font-bold mb-8 animate-fade-in">
+              Готовы купить автомобиль из Кореи?
+              <span className="block text-4xl mt-4 bg-gradient-to-r from-green-400 to-red-400 bg-clip-text text-transparent animate-pulse">
+                Мы поможем сделать правильный выбор!
+              </span>
+            </h2>
+            <p className="text-xl mb-12 max-w-2xl mx-auto animate-fade-in text-gray-300">
+              Оставьте заявку прямо сейчас и получите персональный расчет стоимости автомобиля с доставкой в Россию
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up">
+              <Button size="lg" className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                <Icon name="Calculator" size={20} className="mr-2" />
+                Рассчитать стоимость
+              </Button>
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300" onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}>
+                <Icon name="Phone" size={20} className="mr-2" />
+                Позвонить сейчас
+              </Button>
+            </div>
+            <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-up">
+              <div className="text-center group hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <Icon name="Clock" className="text-white" size={24} />
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-green-400">Быстро</h3>
+                <p className="text-gray-400">Подбор за 24 часа</p>
+              </div>
+              <div className="text-center group hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <Icon name="Shield" className="text-white" size={24} />
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-red-400">Надежно</h3>
+                <p className="text-gray-400">Полная гарантия</p>
+              </div>
+              <div className="text-center group hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <Icon name="DollarSign" className="text-white" size={24} />
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-green-400">Выгодно</h3>
+                <p className="text-gray-400">Экономия до 30%</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
