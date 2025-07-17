@@ -24,11 +24,11 @@ const Index = () => {
     const priceInRub = price * wonToRub;
     
     // Базовые расходы
-    const logistics = priceInRub * 0.12;
-    const customs = priceInRub * 0.25;
+    const logistics = priceInRub * 0.20;
+    const customs = priceInRub * 0.30;
     const commission = priceInRub * 0.10;
     const insurance = priceInRub * 0.03;
-    const registration = 15000;
+    const registration = 50000;
     
     // Дополнительные расходы в зависимости от года
     const yearMultiplier = calculatorData.year === '2024' ? 1.0 : 
@@ -117,7 +117,7 @@ const Index = () => {
             </div>
             <div className="relative animate-slide-in">
               <img 
-                src="/img/48803df7-31c9-4e31-bb4b-852f77979fd2.jpg" 
+                src="/img/a284cfa8-31b5-4f0e-beda-9fced498fade.jpg" 
                 alt="Korean luxury cars showroom" 
                 className="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
               />
@@ -371,11 +371,11 @@ const Index = () => {
                         <span className="font-semibold text-lg">{costs.price.toLocaleString()} ₽</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
-                        <span className="text-gray-300">Логистика (12%):</span>
+                        <span className="text-gray-300">Логистика (20%):</span>
                         <span className="font-semibold text-lg">{costs.logistics.toLocaleString()} ₽</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
-                        <span className="text-gray-300">Таможня (25%):</span>
+                        <span className="text-gray-300">Таможня (30%):</span>
                         <span className="font-semibold text-lg">{costs.customs.toLocaleString()} ₽</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
@@ -423,60 +423,81 @@ const Index = () => {
       </section>
 
       {/* Work Process Section */}
-      <section id="work-process" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Как мы работаем</h2>
-            <p className="text-xl text-gray-600">Пошаговый процесс покупки автомобиля из Кореи</p>
+      <section id="work-process" className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-green-50/30 to-red-50/30"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6 animate-fade-in">Как мы работаем</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in">Пошаговый процесс покупки автомобиля из Кореи с премиум сервисом</p>
           </div>
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-200 hidden lg:block"></div>
-            <div className="space-y-12">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-green-400 to-red-400 hidden lg:block rounded-full shadow-lg"></div>
+            <div className="space-y-16">
               {[
                 { 
                   step: "01", 
                   title: "Заявка и консультация", 
                   description: "Оставляете заявку с требованиями к автомобилю. Наш менеджер связывается с вами для уточнения деталей и расчета стоимости.",
                   icon: "MessageCircle",
-                  image: "/img/3997b760-f62c-4241-a895-dc0aac2a56ad.jpg"
+                  image: "/img/2ea165f6-f950-424b-9e24-29f87790f76b.jpg",
+                  delay: "0s"
                 },
                 { 
                   step: "02", 
                   title: "Поиск и подбор автомобиля", 
                   description: "Ищем подходящий автомобиль на аукционах и у дилеров Кореи. Проверяем техническое состояние и юридическую чистоту.",
                   icon: "Search",
-                  image: "/img/81fda75d-dca0-4760-9827-e9088a1c011c.jpg"
+                  image: "/img/59a86106-6de2-4e84-b9f7-4af18c626784.jpg",
+                  delay: "0.2s"
                 },
                 { 
                   step: "03", 
                   title: "Выкуп и оформление", 
                   description: "После вашего одобрения выкупаем автомобиль, оформляем все необходимые документы для экспорта.",
                   icon: "CreditCard",
-                  image: "/img/2a0e5c98-8018-406f-a0a5-189bd57445be.jpg"
+                  image: "/img/7a742843-b211-4f10-8c4f-bec779fbb031.jpg",
+                  delay: "0.4s"
                 },
                 { 
                   step: "04", 
                   title: "Доставка и таможня", 
                   description: "Отправляем автомобиль морем в Россию, оформляем таможенные документы и доставляем в ваш город.",
                   icon: "Truck",
-                  image: "/img/2a0e5c98-8018-406f-a0a5-189bd57445be.jpg"
+                  image: "/img/e3f34ee8-f537-4db7-a15e-eceb169db693.jpg",
+                  delay: "0.6s"
                 }
               ].map((step, index) => (
-                <div key={index} className={`flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8`}>
-                  <div className="flex-1">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-[#FF6B35] rounded-full flex items-center justify-center mr-4">
-                        <Icon name={step.icon as any} className="text-white" size={20} />
+                <div 
+                  key={index} 
+                  className={`group animate-slide-up flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12`}
+                  style={{ animationDelay: step.delay }}
+                >
+                  <div className="flex-1 relative">
+                    <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-green-400 to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="flex items-center mb-6">
+                      <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-green-500 to-red-500 rounded-full flex items-center justify-center mr-6 group-hover:animate-float shadow-lg">
+                        <Icon name={step.icon as any} className="text-white" size={24} />
                       </div>
                       <div>
-                        <div className="text-sm text-[#FF6B35] font-medium">Шаг {step.step}</div>
-                        <h3 className="text-xl font-bold text-[#2C3E50]">{step.title}</h3>
+                        <div className="text-sm text-green-600 font-bold mb-1">Шаг {step.step}</div>
+                        <h3 className="text-2xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">{step.title}</h3>
                       </div>
                     </div>
-                    <p className="text-gray-600">{step.description}</p>
+                    <p className="text-gray-600 text-lg leading-relaxed group-hover:text-gray-700 transition-colors">{step.description}</p>
                   </div>
-                  <div className="flex-1">
-                    <img src={step.image} alt={step.title} className="w-full h-64 object-cover rounded-lg shadow-lg" />
+                  <div className="flex-1 relative">
+                    <div className="relative overflow-hidden rounded-2xl shadow-2xl group-hover:shadow-3xl transition-all duration-500 transform group-hover:-translate-y-2">
+                      <img 
+                        src={step.image} 
+                        alt={step.title} 
+                        className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" 
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute bottom-6 left-6 right-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <h4 className="text-lg font-bold mb-2">{step.title}</h4>
+                        <div className="w-12 h-1 bg-green-400 rounded-full"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
