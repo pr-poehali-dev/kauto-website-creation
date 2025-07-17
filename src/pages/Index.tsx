@@ -81,8 +81,8 @@ const Index = () => {
       <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-green-900/20 to-red-900/20"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div className="pt-8">
               <h2 className="text-6xl font-bold mb-8 animate-fade-in">
                 K-AUTO 96 — Подбор и выкуп авто из Южной Кореи
                 <span className="bg-gradient-to-r from-green-400 to-red-400 bg-clip-text text-transparent"> с доставкой в РФ под ключ!</span>
@@ -95,7 +95,7 @@ const Index = () => {
                   <Icon name="Calculator" size={20} className="mr-2" />
                   Рассчитать стоимость авто
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 border-gray-300 text-white hover:bg-white hover:text-gray-900 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300" onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}>
+                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300" onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}>
                   <Icon name="MessageCircle" size={20} className="mr-2" />
                   Получить консультацию
                 </Button>
@@ -115,16 +115,18 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="relative animate-slide-in">
-              <img 
-                src="/img/6583de9a-46cd-45c3-960a-0aeffd56bb77.jpg" 
-                alt="Korean luxury cars showroom" 
-                className="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute -bottom-8 -left-8 bg-gradient-to-r from-green-500 to-green-600 p-6 rounded-2xl shadow-xl">
-                <div className="flex items-center space-x-3">
-                  <Icon name="CheckCircle" className="text-white" size={24} />
-                  <span className="text-lg font-semibold text-white">Работаем официально</span>
+            <div className="relative animate-slide-in flex justify-center items-center">
+              <div className="w-full max-w-lg">
+                <img 
+                  src="/img/6583de9a-46cd-45c3-960a-0aeffd56bb77.jpg" 
+                  alt="Korean luxury cars showroom" 
+                  className="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute -bottom-8 -left-8 bg-gradient-to-r from-green-500 to-green-600 p-6 rounded-2xl shadow-xl">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="CheckCircle" className="text-white" size={24} />
+                    <span className="text-lg font-semibold text-white">Работаем официально</span>
+                  </div>
                 </div>
               </div>
             </div>
