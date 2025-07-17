@@ -30,7 +30,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-white shadow-sm border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -38,68 +38,67 @@ const Index = () => {
               <h1 className="text-2xl font-bold text-[#2C3E50]">K-AUTO 96</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#catalog" className="text-gray-600 hover:text-[#FF6B35] transition-colors">Каталог</a>
+              <a href="#services" className="text-gray-600 hover:text-[#FF6B35] transition-colors">Услуги</a>
+              <a href="#advantages" className="text-gray-600 hover:text-[#FF6B35] transition-colors">Преимущества</a>
               <a href="#calculator" className="text-gray-600 hover:text-[#FF6B35] transition-colors">Калькулятор</a>
-              <a href="#steps" className="text-gray-600 hover:text-[#FF6B35] transition-colors">Этапы</a>
-              <a href="#guarantees" className="text-gray-600 hover:text-[#FF6B35] transition-colors">Гарантии</a>
+              <a href="#work-process" className="text-gray-600 hover:text-[#FF6B35] transition-colors">Как работаем</a>
               <a href="#contacts" className="text-gray-600 hover:text-[#FF6B35] transition-colors">Контакты</a>
             </nav>
             <Button className="bg-[#FF6B35] hover:bg-[#e55a2b]">
               <Icon name="Phone" size={16} className="mr-2" />
-              Связаться
+              +7 (999) 123-45-67
             </Button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-20">
+      <section className="bg-gradient-to-br from-[#2C3E50] to-[#34495E] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-5xl font-bold text-[#2C3E50] mb-6">
-                Автомобили из Кореи
-                <span className="text-[#FF6B35]"> под ключ</span>
+              <h2 className="text-5xl font-bold mb-6">
+                K-AUTO 96 — Подбор и выкуп авто из Южной Кореи
+                <span className="text-[#FF6B35]"> с доставкой в РФ под ключ!</span>
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Подбор и доставка качественных автомобилей из Южной Кореи. 
-                Экономия до 30% от цен в России. Полное сопровождение сделки.
+              <p className="text-xl text-gray-300 mb-8">
+                Подбор и экспорт авто из Южной Кореи в Россию. Привезем в топовой комплектации с низким пробегом. Доставим за 27 дней. Цены ниже на 30% чем в РФ
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button size="lg" className="bg-[#FF6B35] hover:bg-[#e55a2b] px-8">
                   <Icon name="Calculator" size={20} className="mr-2" />
-                  Рассчитать стоимость
+                  Рассчитать стоимость авто
                 </Button>
-                <Button size="lg" variant="outline" className="border-[#2C3E50] text-[#2C3E50]">
-                  <Icon name="Play" size={20} className="mr-2" />
-                  Как это работает
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#2C3E50]">
+                  <Icon name="MessageCircle" size={20} className="mr-2" />
+                  Получить консультацию
                 </Button>
               </div>
-              <div className="flex items-center space-x-6">
+              <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2C3E50]">500+</div>
-                  <div className="text-sm text-gray-600">Автомобилей</div>
+                  <div className="text-3xl font-bold text-[#FF6B35]">500+</div>
+                  <div className="text-sm text-gray-300">Автомобилей привезено</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2C3E50]">27</div>
-                  <div className="text-sm text-gray-600">Дней доставка</div>
+                  <div className="text-3xl font-bold text-[#FF6B35]">27</div>
+                  <div className="text-sm text-gray-300">Дней доставка</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2C3E50]">30%</div>
-                  <div className="text-sm text-gray-600">Экономия</div>
+                  <div className="text-3xl font-bold text-[#FF6B35]">30%</div>
+                  <div className="text-sm text-gray-300">Экономия от цен в РФ</div>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img 
-                src="/img/81068982-74e5-4030-87bd-3a74f43d3a33.jpg" 
-                alt="Korean cars showroom" 
+                src="/img/81fda75d-dca0-4760-9827-e9088a1c011c.jpg" 
+                alt="Korean cars import" 
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
+              <div className="absolute -bottom-6 -left-6 bg-[#FF6B35] p-4 rounded-lg shadow-lg">
                 <div className="flex items-center space-x-2">
-                  <Icon name="CheckCircle" className="text-green-500" size={20} />
-                  <span className="text-sm font-medium">Сертифицированные авто</span>
+                  <Icon name="CheckCircle" className="text-white" size={20} />
+                  <span className="text-sm font-medium text-white">Работаем официально</span>
                 </div>
               </div>
             </div>
@@ -107,46 +106,103 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Catalog Section */}
-      <section id="catalog" className="py-20 bg-gray-50">
+      {/* Services Section */}
+      <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Популярные модели</h2>
-            <p className="text-xl text-gray-600">Самые востребованные автомобили из Кореи</p>
+            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Наши услуги</h2>
+            <p className="text-xl text-gray-600">Полный цикл подбора и доставки автомобилей из Кореи</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Search" className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-[#2C3E50] mb-3">Подбор автомобиля</h3>
+              <p className="text-gray-600">Найдем автомобиль по вашим требованиям на аукционах и у дилеров Южной Кореи</p>
+            </Card>
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="CreditCard" className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-[#2C3E50] mb-3">Выкуп и оформление</h3>
+              <p className="text-gray-600">Выкупаем автомобиль, проверяем документы и готовим к отправке</p>
+            </Card>
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Truck" className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-[#2C3E50] mb-3">Доставка в РФ</h3>
+              <p className="text-gray-600">Морская доставка и таможенное оформление в России под ключ</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Advantages Section */}
+      <section id="advantages" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Почему выбирают нас</h2>
+            <p className="text-xl text-gray-600">Наши преимущества в работе с корейскими автомобилями</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Hyundai Sonata", price: "от 1 800 000₽", year: "2022-2024", engine: "2.0L", image: "/img/0beb3c4d-3209-4adf-a3e6-09b25a2cab37.jpg" },
-              { name: "Kia Sportage", price: "от 2 200 000₽", year: "2021-2024", engine: "2.0L", image: "/img/0beb3c4d-3209-4adf-a3e6-09b25a2cab37.jpg" },
-              { name: "Genesis G70", price: "от 2 800 000₽", year: "2022-2024", engine: "2.0T", image: "/img/0beb3c4d-3209-4adf-a3e6-09b25a2cab37.jpg" },
-              { name: "Hyundai Tucson", price: "от 2 100 000₽", year: "2021-2024", engine: "1.6T", image: "/img/0beb3c4d-3209-4adf-a3e6-09b25a2cab37.jpg" },
-              { name: "Kia Sorento", price: "от 2 600 000₽", year: "2022-2024", engine: "2.5L", image: "/img/0beb3c4d-3209-4adf-a3e6-09b25a2cab37.jpg" },
-              { name: "Genesis GV70", price: "от 3 400 000₽", year: "2022-2024", engine: "2.5T", image: "/img/0beb3c4d-3209-4adf-a3e6-09b25a2cab37.jpg" }
-            ].map((car, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-white">
-                <div className="aspect-video bg-gray-100 rounded-t-lg relative overflow-hidden">
-                  <img src={car.image} alt={car.name} className="w-full h-full object-cover" />
-                  <Badge className="absolute top-3 right-3 bg-[#FF6B35]">В наличии</Badge>
+              { 
+                title: "Цены ниже на 30%", 
+                description: "Прямые поставки от производителей и дилеров", 
+                icon: "DollarSign",
+                color: "bg-green-500"
+              },
+              { 
+                title: "Доставка 27 дней", 
+                description: "Быстрая морская доставка контейнерами", 
+                icon: "Clock",
+                color: "bg-blue-500"
+              },
+              { 
+                title: "Топовая комплектация", 
+                description: "Автомобили в максимальной комплектации", 
+                icon: "Star",
+                color: "bg-yellow-500"
+              },
+              { 
+                title: "Низкий пробег", 
+                description: "Только автомобили с минимальным пробегом", 
+                icon: "Gauge",
+                color: "bg-purple-500"
+              },
+              { 
+                title: "Юридическая чистота", 
+                description: "Все документы и сертификаты в порядке", 
+                icon: "Shield",
+                color: "bg-red-500"
+              },
+              { 
+                title: "Гарантия качества", 
+                description: "Техническая проверка перед отправкой", 
+                icon: "CheckCircle",
+                color: "bg-green-600"
+              },
+              { 
+                title: "Страхование", 
+                description: "Полная страховка на время доставки", 
+                icon: "Umbrella",
+                color: "bg-blue-600"
+              },
+              { 
+                title: "Поддержка 24/7", 
+                description: "Консультации на всех этапах покупки", 
+                icon: "Headphones",
+                color: "bg-orange-500"
+              }
+            ].map((advantage, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+                <div className={`w-12 h-12 ${advantage.color} rounded-lg flex items-center justify-center mb-4`}>
+                  <Icon name={advantage.icon as any} className="text-white" size={20} />
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-[#2C3E50]">{car.name}</CardTitle>
-                  <CardDescription className="text-[#FF6B35] font-semibold text-lg">{car.price}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 mb-4">
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Год:</span>
-                      <span className="font-medium">{car.year}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Двигатель:</span>
-                      <span className="font-medium">{car.engine}</span>
-                    </div>
-                  </div>
-                  <Button className="w-full bg-[#FF6B35] hover:bg-[#e55a2b]">
-                    Подробнее
-                  </Button>
-                </CardContent>
+                <h3 className="text-lg font-semibold text-[#2C3E50] mb-2">{advantage.title}</h3>
+                <p className="text-gray-600 text-sm">{advantage.description}</p>
               </Card>
             ))}
           </div>
@@ -154,31 +210,31 @@ const Index = () => {
       </section>
 
       {/* Calculator Section */}
-      <section id="calculator" className="py-20 bg-white">
+      <section id="calculator" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Калькулятор стоимости</h2>
-            <p className="text-xl text-gray-600">Рассчитайте примерную стоимость автомобиля с доставкой</p>
+            <p className="text-xl text-gray-600">Рассчитайте стоимость автомобиля с доставкой из Кореи</p>
           </div>
           <div className="max-w-4xl mx-auto">
-            <Card className="p-6">
+            <Card className="p-8 bg-white">
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-6">
                   <div>
-                    <Label htmlFor="carPrice" className="text-base font-medium">Стоимость автомобиля в Корее (₩)</Label>
+                    <Label htmlFor="carPrice" className="text-base font-medium text-[#2C3E50]">Стоимость автомобиля в Корее (₩)</Label>
                     <Input
                       id="carPrice"
                       type="number"
                       placeholder="30000000"
                       value={calculatorData.carPrice}
                       onChange={(e) => setCalculatorData({...calculatorData, carPrice: e.target.value})}
-                      className="mt-2"
+                      className="mt-2 border-gray-300 focus:border-[#FF6B35]"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="year" className="text-base font-medium">Год выпуска</Label>
+                    <Label htmlFor="year" className="text-base font-medium text-[#2C3E50]">Год выпуска</Label>
                     <Select value={calculatorData.year} onValueChange={(value) => setCalculatorData({...calculatorData, year: value})}>
-                      <SelectTrigger className="mt-2">
+                      <SelectTrigger className="mt-2 border-gray-300 focus:border-[#FF6B35]">
                         <SelectValue placeholder="Выберите год" />
                       </SelectTrigger>
                       <SelectContent>
@@ -186,13 +242,14 @@ const Index = () => {
                         <SelectItem value="2023">2023</SelectItem>
                         <SelectItem value="2022">2022</SelectItem>
                         <SelectItem value="2021">2021</SelectItem>
+                        <SelectItem value="2020">2020</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <div>
-                    <Label htmlFor="engine" className="text-base font-medium">Объем двигателя</Label>
+                    <Label htmlFor="engine" className="text-base font-medium text-[#2C3E50]">Объем двигателя</Label>
                     <Select value={calculatorData.engine} onValueChange={(value) => setCalculatorData({...calculatorData, engine: value})}>
-                      <SelectTrigger className="mt-2">
+                      <SelectTrigger className="mt-2 border-gray-300 focus:border-[#FF6B35]">
                         <SelectValue placeholder="Выберите объем" />
                       </SelectTrigger>
                       <SelectContent>
@@ -204,9 +261,9 @@ const Index = () => {
                     </Select>
                   </div>
                   <div>
-                    <Label htmlFor="transmission" className="text-base font-medium">Трансмиссия</Label>
+                    <Label htmlFor="transmission" className="text-base font-medium text-[#2C3E50]">Трансмиссия</Label>
                     <Select value={calculatorData.transmission} onValueChange={(value) => setCalculatorData({...calculatorData, transmission: value})}>
-                      <SelectTrigger className="mt-2">
+                      <SelectTrigger className="mt-2 border-gray-300 focus:border-[#FF6B35]">
                         <SelectValue placeholder="Выберите трансмиссию" />
                       </SelectTrigger>
                       <SelectContent>
@@ -216,15 +273,15 @@ const Index = () => {
                     </Select>
                   </div>
                 </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold text-[#2C3E50] mb-4">Расчет стоимости</h3>
+                <div className="bg-gradient-to-br from-[#2C3E50] to-[#34495E] text-white p-6 rounded-lg">
+                  <h3 className="text-xl font-bold mb-4">Расчет стоимости</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
                       <span>Стоимость авто:</span>
                       <span className="font-medium">{costs.price.toLocaleString()} ₽</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Логистика (15%):</span>
+                      <span>Доставка (15%):</span>
                       <span className="font-medium">{costs.logistics.toLocaleString()} ₽</span>
                     </div>
                     <div className="flex justify-between">
@@ -232,17 +289,18 @@ const Index = () => {
                       <span className="font-medium">{costs.customs.toLocaleString()} ₽</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Комиссия (8%):</span>
+                      <span>Наши услуги (8%):</span>
                       <span className="font-medium">{costs.commission.toLocaleString()} ₽</span>
                     </div>
-                    <Separator />
+                    <Separator className="bg-gray-400" />
                     <div className="flex justify-between text-lg font-bold">
-                      <span>Итого:</span>
+                      <span>Итого к оплате:</span>
                       <span className="text-[#FF6B35]">{costs.total.toLocaleString()} ₽</span>
                     </div>
                   </div>
-                  <Button className="w-full mt-6 bg-[#FF6B35] hover:bg-[#e55a2b]">
-                    Заказать подбор
+                  <Button className="w-full mt-6 bg-[#FF6B35] hover:bg-[#e55a2b] text-white">
+                    <Icon name="MessageCircle" size={16} className="mr-2" />
+                    Оставить заявку
                   </Button>
                 </div>
               </div>
@@ -251,59 +309,122 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Steps Section */}
-      <section id="steps" className="py-20 bg-gray-50">
+      {/* Work Process Section */}
+      <section id="work-process" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Этапы работы</h2>
-            <p className="text-xl text-gray-600">Простой и понятный процесс покупки автомобиля</p>
+            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Как мы работаем</h2>
+            <p className="text-xl text-gray-600">Пошаговый процесс покупки автомобиля из Кореи</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { step: "01", title: "Заявка", description: "Оставляете заявку на подбор автомобиля", icon: "FileText" },
-              { step: "02", title: "Подбор", description: "Находим подходящий автомобиль в Корее", icon: "Search" },
-              { step: "03", title: "Выкуп", description: "Выкупаем и оформляем автомобиль", icon: "CreditCard" },
-              { step: "04", title: "Доставка", description: "Доставляем автомобиль в Россию", icon: "Truck" }
-            ].map((step, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow bg-white">
-                <div className="w-16 h-16 bg-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name={step.icon as any} className="text-white" size={24} />
+          <div className="relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-200 hidden lg:block"></div>
+            <div className="space-y-12">
+              {[
+                { 
+                  step: "01", 
+                  title: "Заявка и консультация", 
+                  description: "Оставляете заявку с требованиями к автомобилю. Наш менеджер связывается с вами для уточнения деталей и расчета стоимости.",
+                  icon: "MessageCircle",
+                  image: "/img/3997b760-f62c-4241-a895-dc0aac2a56ad.jpg"
+                },
+                { 
+                  step: "02", 
+                  title: "Поиск и подбор автомобиля", 
+                  description: "Ищем подходящий автомобиль на аукционах и у дилеров Кореи. Проверяем техническое состояние и юридическую чистоту.",
+                  icon: "Search",
+                  image: "/img/81fda75d-dca0-4760-9827-e9088a1c011c.jpg"
+                },
+                { 
+                  step: "03", 
+                  title: "Выкуп и оформление", 
+                  description: "После вашего одобрения выкупаем автомобиль, оформляем все необходимые документы для экспорта.",
+                  icon: "CreditCard",
+                  image: "/img/2a0e5c98-8018-406f-a0a5-189bd57445be.jpg"
+                },
+                { 
+                  step: "04", 
+                  title: "Доставка и таможня", 
+                  description: "Отправляем автомобиль морем в Россию, оформляем таможенные документы и доставляем в ваш город.",
+                  icon: "Truck",
+                  image: "/img/2a0e5c98-8018-406f-a0a5-189bd57445be.jpg"
+                }
+              ].map((step, index) => (
+                <div key={index} className={`flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8`}>
+                  <div className="flex-1">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-[#FF6B35] rounded-full flex items-center justify-center mr-4">
+                        <Icon name={step.icon as any} className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#FF6B35] font-medium">Шаг {step.step}</div>
+                        <h3 className="text-xl font-bold text-[#2C3E50]">{step.title}</h3>
+                      </div>
+                    </div>
+                    <p className="text-gray-600">{step.description}</p>
+                  </div>
+                  <div className="flex-1">
+                    <img src={step.image} alt={step.title} className="w-full h-64 object-cover rounded-lg shadow-lg" />
+                  </div>
                 </div>
-                <div className="text-3xl font-bold text-[#2C3E50] mb-2">{step.step}</div>
-                <h3 className="text-xl font-semibold text-[#2C3E50] mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
-              </Card>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Guarantees Section */}
-      <section id="guarantees" className="py-20 bg-white">
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-[#FF6B35] to-[#e55a2b] text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-4">Готовы купить автомобиль из Кореи?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Оставьте заявку прямо сейчас и получите персональный расчет стоимости автомобиля с доставкой
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-[#FF6B35] hover:bg-gray-100 px-8">
+              <Icon name="Calculator" size={20} className="mr-2" />
+              Рассчитать стоимость
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#FF6B35] px-8">
+              <Icon name="Phone" size={20} className="mr-2" />
+              Позвонить сейчас
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Наши гарантии</h2>
-            <p className="text-xl text-gray-600">Мы берем на себя все риски и обеспечиваем полную безопасность сделки</p>
+            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Частые вопросы</h2>
+            <p className="text-xl text-gray-600">Ответы на самые популярные вопросы о покупке авто из Кореи</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="max-w-4xl mx-auto space-y-4">
             {[
-              { title: "Юридическая чистота", description: "Все документы проверены и оформлены правильно", icon: "Shield" },
-              { title: "Техническое состояние", description: "Диагностика и проверка всех систем автомобиля", icon: "Settings" },
-              { title: "Сроки доставки", description: "Доставка точно в оговоренные сроки", icon: "Clock" },
-              { title: "Возврат средств", description: "100% возврат при отказе от сделки", icon: "RefreshCw" },
-              { title: "Поддержка 24/7", description: "Круглосуточная поддержка на всех этапах", icon: "Headphones" },
-              { title: "Страховка", description: "Полная страховка автомобиля при транспортировке", icon: "Umbrella" }
-            ].map((guarantee, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#FF6B35] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon name={guarantee.icon as any} className="text-white" size={20} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#2C3E50] mb-2">{guarantee.title}</h3>
-                    <p className="text-gray-600">{guarantee.description}</p>
-                  </div>
-                </div>
+              {
+                question: "Сколько времени занимает доставка автомобиля?",
+                answer: "Доставка автомобиля из Кореи в Россию занимает 27 дней с момента выкупа. Это включает подготовку документов, морскую перевозку и таможенное оформление."
+              },
+              {
+                question: "Какие гарантии вы предоставляете?",
+                answer: "Мы предоставляем полную юридическую гарантию чистоты автомобиля, гарантию технического состояния, страхование на время доставки и гарантию возврата средств при отказе от сделки."
+              },
+              {
+                question: "Можно ли посмотреть автомобиль перед покупкой?",
+                answer: "Да, мы предоставляем детальные фото и видео автомобиля, а также можем организовать онлайн-просмотр через видеосвязь с нашим представителем в Корее."
+              },
+              {
+                question: "Какие документы нужны для покупки?",
+                answer: "Для покупки автомобиля потребуется паспорт РФ, справка о доходах для таможни и договор с нашей компанией. Все остальные документы мы оформляем самостоятельно."
+              },
+              {
+                question: "Действительно ли цены ниже на 30%?",
+                answer: "Да, благодаря прямым поставкам от производителей и дилеров, отсутствию посредников и курсу валют, цены на корейские автомобили действительно ниже российских на 25-35%."
+              }
+            ].map((faq, index) => (
+              <Card key={index} className="p-6">
+                <h3 className="text-lg font-semibold text-[#2C3E50] mb-3">{faq.question}</h3>
+                <p className="text-gray-600">{faq.answer}</p>
               </Card>
             ))}
           </div>
@@ -311,73 +432,148 @@ const Index = () => {
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-20 bg-[#2C3E50]">
+      <section id="contacts" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">Контакты</h2>
-            <p className="text-xl text-gray-300">Свяжитесь с нами любым удобным способом</p>
+            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Свяжитесь с нами</h2>
+            <p className="text-xl text-gray-600">Готовы ответить на все ваши вопросы и помочь с выбором автомобиля</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: "Телефон", value: "+7 (999) 123-45-67", icon: "Phone" },
-              { title: "Email", value: "info@k-auto96.ru", icon: "Mail" },
-              { title: "Адрес", value: "г. Екатеринбург, ул. Ленина, 1", icon: "MapPin" },
-              { title: "Время работы", value: "Пн-Пт: 9:00-18:00", icon: "Clock" }
-            ].map((contact, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name={contact.icon as any} className="text-white" size={24} />
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold text-[#2C3E50] mb-6">Контактная информация</h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                    <Icon name="Phone" className="text-white" size={16} />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#2C3E50]">Телефон</div>
+                    <div className="text-gray-600">+7 (999) 123-45-67</div>
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">{contact.title}</h3>
-                <p className="text-gray-300">{contact.value}</p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                    <Icon name="Mail" className="text-white" size={16} />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#2C3E50]">Email</div>
+                    <div className="text-gray-600">info@k-auto96.ru</div>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                    <Icon name="MapPin" className="text-white" size={16} />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#2C3E50]">Адрес</div>
+                    <div className="text-gray-600">г. Екатеринбург, ул. Ленина, 1</div>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                    <Icon name="Clock" className="text-white" size={16} />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#2C3E50]">Время работы</div>
+                    <div className="text-gray-600">Пн-Пт: 9:00-18:00, Сб: 10:00-16:00</div>
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Button size="lg" className="bg-[#FF6B35] hover:bg-[#e55a2b] px-8">
-              Получить консультацию
-            </Button>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-[#2C3E50] mb-6">Оставить заявку</h3>
+              <Card className="p-6">
+                <div className="space-y-4">
+                  <div>
+                    <Label htmlFor="name" className="text-base font-medium text-[#2C3E50]">Ваше имя</Label>
+                    <Input id="name" placeholder="Введите ваше имя" className="mt-1" />
+                  </div>
+                  <div>
+                    <Label htmlFor="phone" className="text-base font-medium text-[#2C3E50]">Телефон</Label>
+                    <Input id="phone" placeholder="+7 (999) 123-45-67" className="mt-1" />
+                  </div>
+                  <div>
+                    <Label htmlFor="car" className="text-base font-medium text-[#2C3E50]">Интересующий автомобиль</Label>
+                    <Input id="car" placeholder="Например: Hyundai Sonata 2023" className="mt-1" />
+                  </div>
+                  <div>
+                    <Label htmlFor="message" className="text-base font-medium text-[#2C3E50]">Сообщение</Label>
+                    <textarea 
+                      id="message" 
+                      placeholder="Опишите ваши требования к автомобилю" 
+                      className="mt-1 w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35]" 
+                      rows={4}
+                    />
+                  </div>
+                  <Button className="w-full bg-[#FF6B35] hover:bg-[#e55a2b] text-white">
+                    <Icon name="Send" size={16} className="mr-2" />
+                    Отправить заявку
+                  </Button>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-[#2C3E50] text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Car" className="text-[#FF6B35]" size={28} />
                 <span className="text-xl font-bold">K-AUTO 96</span>
               </div>
-              <p className="text-gray-400">
-                Профессиональная покупка и доставка автомобилей из Южной Кореи
+              <p className="text-gray-400 text-sm">
+                Профессиональный подбор и доставка автомобилей из Южной Кореи с полным сопровождением сделки
               </p>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Услуги</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Подбор автомобилей</li>
-                <li>Доставка из Кореи</li>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li>Подбор автомобилей в Корее</li>
+                <li>Выкуп и техническая проверка</li>
+                <li>Доставка морем</li>
                 <li>Таможенное оформление</li>
-                <li>Техническая проверка</li>
+                <li>Страхование груза</li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Информация</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>О компании</li>
-                <li>Отзывы клиентов</li>
-                <li>Гарантии</li>
-                <li>Контакты</li>
+              <h4 className="text-lg font-semibold mb-4">Популярные марки</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li>Hyundai</li>
+                <li>Kia</li>
+                <li>Genesis</li>
+                <li>SsangYong</li>
+                <li>Chevrolet Korea</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Контакты</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li>+7 (999) 123-45-67</li>
+                <li>info@k-auto96.ru</li>
+                <li>г. Екатеринбург</li>
+                <li>Пн-Пт: 9:00-18:00</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 K-AUTO 96. Все права защищены.</p>
+          <div className="border-t border-gray-700 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="text-gray-400 text-sm">
+                © 2024 K-AUTO 96. Все права защищены.
+              </div>
+              <div className="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" className="text-gray-400 hover:text-white text-sm">Политика конфиденциальности</a>
+                <a href="#" className="text-gray-400 hover:text-white text-sm">Условия использования</a>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
+      </section>
+
+
     </div>
   );
 };
