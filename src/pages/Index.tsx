@@ -508,10 +508,6 @@ const Index = () => {
                   image: "/img/ff7f18ad-a70f-4b46-9280-ac385a367b5b.jpg",
                   delay: "0.7s"
                 }
-                  icon: "CheckCircle",
-                  image: "/img/e3f34ee8-f537-4db7-a15e-eceb169db693.jpg",
-                  delay: "0.7s"
-                }
               ].map((step, index) => (
                 <div 
                   key={index} 
