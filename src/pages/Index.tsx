@@ -465,7 +465,7 @@ const Index = () => {
                   title: "Предоплата", 
                   description: "Вы оплачиваете 150 000 ₽ за услугу. И мы выезжаем на осмотр подобранных вариантов.",
                   icon: "CreditCard",
-                  image: "/img/912c939e-7ec5-4b2c-a502-9366681019ab.jpg",
+                  image: "/img/9bf11544-384d-4514-b92c-dfc1ca6d24b6.jpg",
                   delay: "0.2s"
                 },
                 { 
@@ -473,7 +473,7 @@ const Index = () => {
                   title: "Первичный осмотр", 
                   description: "Проводим детальный осмотр. Высылаем отчёт более 100 подробных фото, 10 видео и диагностический отчёт. После утверждения понравившегося варианта - вносите залог за авто (сумма входит в конечную стоимость).",
                   icon: "Eye",
-                  image: "/img/01ae7b5e-84ce-4266-9f55-4d03a8999eea.jpg",
+                  image: "/img/18bee6e0-016e-4a28-ade1-182cf11ccee1.jpg",
                   delay: "0.3s"
                 },
                 { 
@@ -481,7 +481,7 @@ const Index = () => {
                   title: "Выкуп и вторичный осмотр", 
                   description: "В течение 7 дней после внесения залога - вы оплачиваете авто и все расходы по Корее через наши обменники по всей стране или инвойсом через банк (для несанкционных авто). Мы выкупаем машину и проводим вторичный осмотр на подъемнике с фото и видео отчётом.",
                   icon: "ShoppingCart",
-                  image: "/img/1e759362-ea7c-4a07-9272-d4d2328c2517.jpg",
+                  image: "/img/ab6c9c0d-c323-4d77-bcd0-3844512523f8.jpg",
                   delay: "0.4s"
                 },
                 { 
@@ -564,7 +564,7 @@ const Index = () => {
               </span>
             </h2>
             <p className="text-xl mb-12 max-w-2xl mx-auto animate-fade-in text-gray-300">
-              Оставьте заявку прямо сейчас и получите персональный расчет стоимости автомобиля с доставкой в Россию
+              Оставьте заявку прямо сейчас и получите примерный расчет стоимости автомобиля с доставкой из Южной Кореи
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up">
               <Button size="lg" className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 px-10 py-4 shadow-lg transform hover:-translate-y-1 transition-all duration-300">
@@ -668,85 +668,103 @@ const Index = () => {
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-20 bg-white">
+      <section id="contacts" className="py-20 bg-gradient-to-br from-white to-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#2C3E50] mb-4">Свяжитесь с нами</h2>
-            <p className="text-xl text-gray-600">Готовы ответить на все ваши вопросы и помочь с выбором автомобиля</p>
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6 animate-fade-in">Свяжитесь с нами</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in">Готовы ответить на все ваши вопросы и помочь с выбором автомобиля</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-[#2C3E50] mb-6">Контактная информация</h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-[#FF6B35] rounded-full flex items-center justify-center">
-                    <Icon name="Phone" className="text-white" size={16} />
+          <div className="grid md:grid-cols-2 gap-16">
+            <div className="animate-slide-up">
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Контактная информация</h3>
+              <div className="space-y-6">
+                <div className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.open('tel:+79991234567', '_self')}>
+                  <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                    <Icon name="Phone" className="text-white" size={20} />
                   </div>
                   <div>
-                    <div className="font-semibold text-[#2C3E50]">Телефон</div>
-                    <div className="text-gray-600">+7 (999) 123-45-67</div>
+                    <div className="font-bold text-lg text-gray-900 group-hover:text-green-600 transition-colors">Телефон</div>
+                    <div className="text-gray-600 group-hover:text-gray-700 transition-colors">+7 (999) 123-45-67</div>
                   </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-[#FF6B35] rounded-full flex items-center justify-center">
-                    <Icon name="Mail" className="text-white" size={16} />
+                <div className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.open('https://wa.me/79991234567', '_blank')}>
+                  <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                    <Icon name="MessageCircle" className="text-white" size={20} />
                   </div>
                   <div>
-                    <div className="font-semibold text-[#2C3E50]">Email</div>
-                    <div className="text-gray-600">info@k-auto96.ru</div>
+                    <div className="font-bold text-lg text-gray-900 group-hover:text-green-600 transition-colors">WhatsApp</div>
+                    <div className="text-gray-600 group-hover:text-gray-700 transition-colors">Написать в WhatsApp</div>
                   </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-[#FF6B35] rounded-full flex items-center justify-center">
-                    <Icon name="MapPin" className="text-white" size={16} />
+                <div className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}>
+                  <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                    <Icon name="Send" className="text-white" size={20} />
                   </div>
                   <div>
-                    <div className="font-semibold text-[#2C3E50]">Адрес</div>
-                    <div className="text-gray-600">г. Екатеринбург, ул. Ленина, 1</div>
+                    <div className="font-bold text-lg text-gray-900 group-hover:text-blue-600 transition-colors">Telegram</div>
+                    <div className="text-gray-600 group-hover:text-gray-700 transition-colors">Написать в Telegram</div>
                   </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-[#FF6B35] rounded-full flex items-center justify-center">
-                    <Icon name="Clock" className="text-white" size={16} />
+                <div className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.open('mailto:info@k-auto96.ru', '_self')}>
+                  <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                    <Icon name="Mail" className="text-white" size={20} />
                   </div>
                   <div>
-                    <div className="font-semibold text-[#2C3E50]">Время работы</div>
-                    <div className="text-gray-600">Пн-Пт: 9:00-18:00, Сб: 10:00-16:00</div>
+                    <div className="font-bold text-lg text-gray-900 group-hover:text-red-600 transition-colors">Email</div>
+                    <div className="text-gray-600 group-hover:text-gray-700 transition-colors">info@k-auto96.ru</div>
+                  </div>
+                </div>
+                <div className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                    <Icon name="MapPin" className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-bold text-lg text-gray-900 group-hover:text-green-600 transition-colors">Адрес</div>
+                    <div className="text-gray-600 group-hover:text-gray-700 transition-colors">г. Екатеринбург, ул. Ленина, 1</div>
+                  </div>
+                </div>
+                <div className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                    <Icon name="Clock" className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-bold text-lg text-gray-900 group-hover:text-green-600 transition-colors">Время работы</div>
+                    <div className="text-gray-600 group-hover:text-gray-700 transition-colors">Пн-Пт: 9:00-18:00, Сб: 10:00-16:00</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-2xl font-bold text-[#2C3E50] mb-6">Оставить заявку</h3>
-              <Card className="p-6">
+            <div className="animate-slide-up">
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Оставить заявку</h3>
+              <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="space-y-4">
                   <div>
-                    <Label htmlFor="name" className="text-base font-medium text-[#2C3E50]">Ваше имя</Label>
-                    <Input id="name" placeholder="Введите ваше имя" className="mt-1" />
+                    <Label htmlFor="name" className="text-base font-medium text-gray-900">Ваше имя</Label>
+                    <Input id="name" placeholder="Введите ваше имя" className="mt-1 border-gray-300 focus:border-green-500 focus:ring-green-500" />
                   </div>
                   <div>
-                    <Label htmlFor="phone" className="text-base font-medium text-[#2C3E50]">Телефон</Label>
-                    <Input id="phone" placeholder="+7 (999) 123-45-67" className="mt-1" />
+                    <Label htmlFor="phone" className="text-base font-medium text-gray-900">Телефон</Label>
+                    <Input id="phone" placeholder="+7 (999) 123-45-67" className="mt-1 border-gray-300 focus:border-green-500 focus:ring-green-500" />
                   </div>
                   <div>
-                    <Label htmlFor="car" className="text-base font-medium text-[#2C3E50]">Интересующий автомобиль</Label>
-                    <Input id="car" placeholder="Например: Hyundai Sonata 2023" className="mt-1" />
+                    <Label htmlFor="car" className="text-base font-medium text-gray-900">Интересующий автомобиль</Label>
+                    <Input id="car" placeholder="Например: Hyundai Sonata 2023" className="mt-1 border-gray-300 focus:border-green-500 focus:ring-green-500" />
                   </div>
                   <div>
-                    <Label htmlFor="message" className="text-base font-medium text-[#2C3E50]">Сообщение</Label>
+                    <Label htmlFor="message" className="text-base font-medium text-gray-900">Сообщение</Label>
                     <textarea 
                       id="message" 
                       placeholder="Опишите ваши требования к автомобилю" 
-                      className="mt-1 w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35]" 
+                      className="mt-1 w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500" 
                       rows={4}
                     />
                   </div>
-                  <Button className="w-full bg-[#FF6B35] hover:bg-[#e55a2b] text-white">
+                  <Button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                     <Icon name="Send" size={16} className="mr-2" />
                     Отправить заявку
                   </Button>
                 </div>
-              </Card>
+              </div>
             </div>
           </div>
         </div>
